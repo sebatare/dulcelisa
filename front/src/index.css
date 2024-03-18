@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.h1__home{
+    @apply bg-white text-4xl font-semibold inline-block;
+    border-radius: 54% 46% 35% 65% / 12% 31% 69% 88% ;
+    width: 200px;
+    height: 60px;
+    color: rgb(245, 243, 245);
+    text-shadow: 
+    -3px 0 5px rgb(112, 26, 159), 
+    0 2px 5px rgb(112, 26, 159), 
+    2px 0 5px rgb(112, 26, 159), 
+    0 -2px 5px rgb(112, 26, 159);
+     
+}

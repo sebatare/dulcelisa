@@ -9,15 +9,15 @@ import {
 const f = new Intl.NumberFormat('es-CL', {
     currency: 'CLP',
     style: "currency",
-  })
+})
 
 const product = {
-    id:1,
-    name:'Apple AirPods',
-    description:'With plenty of talk and listen time, voice-activated Siri access, and an available wireless charging case.',
-    price:"150000",
+    id: 1,
+    name: 'Apple AirPods',
+    description: 'With plenty of talk and listen time, voice-activated Siri access, and an available wireless charging case.',
+    price: "150000",
     url: "https://i.ytimg.com/vi/AS8CZjj3y4U/maxresdefault.jpg",
-    alt:""
+    alt: ""
 
 }
 
@@ -25,7 +25,7 @@ const Home = () => {
     return (
         <div className="min-h-screen bg-gradient-to-tl from-[#a78bfa] to-[#fbcfe8]">
             <header className="py-10 text-center ">
-                <h1 className="text-4xl font-semibold">Galletitas</h1>
+                <h1 className="h1__home">Galletitas</h1>
                 <h2 className="text-2xl font-thin py-2">Galletas y pasteles</h2>
             </header>
             <main>
@@ -60,7 +60,7 @@ const Home = () => {
                     <p className="pt-3 ml-4 text-lg font-extralight text-gray-800 hover:underline">Destacado</p>
                     <Card>
                         <CardHeader shadow={false} floated={false} className="max-h-[150px]">
-                        
+
                             <img
                                 src={product.url}
                                 alt={product.alt}
@@ -73,7 +73,7 @@ const Home = () => {
                                     Apple AirPods
                                 </Typography>
                                 <Typography color="blue-gray" className="font-medium cursor-pointer">
-                                {f.format(product.price)}
+                                    {f.format(product.price)}
                                 </Typography>
                             </div>
                             <Typography
