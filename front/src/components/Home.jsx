@@ -6,6 +6,8 @@ import {
     Typography,
     Button
 } from "@material-tailwind/react";
+import CarouselDraggable from "./navigation/CarouselDraggable.jsx";
+
 const f = new Intl.NumberFormat('es-CL', {
     currency: 'CLP',
     style: "currency",
@@ -18,7 +20,6 @@ const product = {
     price: "150000",
     url: "https://i.ytimg.com/vi/AS8CZjj3y4U/maxresdefault.jpg",
     alt: ""
-
 }
 
 const Home = () => {
@@ -97,7 +98,8 @@ const Home = () => {
                     </Card>
                 </section>
                 <section>
-                    asd
+                    <h3 className="text-2xl">CaruouselDraggable</h3>
+                    <CarouselDraggable/>
                 </section>
             </main>
 
